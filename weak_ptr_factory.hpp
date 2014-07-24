@@ -2,8 +2,8 @@
 #define WEAK_PTR_FACTORY_DEFINED_
 
 
-// By default use std::shared_ptr and std::weak_ptr implementation and
-// place weak_ptr_factory under std namespace, though allows to change that.
+// By default uses std::shared_ptr and std::weak_ptr implementation and
+// places weak_ptr_factory under std namespace, though allows to change that.
 
 #ifndef   shared_ptr_type
 #include  <memory>
@@ -59,7 +59,7 @@ private:
 };
 
 
-// Tmplementation
+// Implementation
 
 template<class T>
 weak_ptr_factory<T>::weak_ptr_factory(T* instance) :
