@@ -1,6 +1,8 @@
 weak_ptr_factory
 ===============
 
+[![Build Status](https://travis-ci.org/MateuszKubuszok/WeakPtrFactory.png)](https://travis-ci.org/MateuszKubuszok/WeakPtrFactory)
+
 Minimalistic weak_ptr_factory class inspired by Chromium's base::WeakPtrFactory
 (require C++11).
 
