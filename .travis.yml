@@ -1,0 +1,9 @@
+language:       cpp
+compiler:
+              - gcc
+              - clang
+script:         scons
+notifications:
+  email:
+    on_success: never
+    on_failure: never
