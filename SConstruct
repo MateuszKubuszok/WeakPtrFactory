@@ -2,6 +2,10 @@ import os
 import SCons.Tool
 
 env = Environment()
+env['CC']          = os.getenv('CC')   or env['CC']
+env['CXX']         = os.getenv('CXX')  or env['CXX']
+env['ENV']['PATH'] = os.getenv('PATH') or env['ENV']['PATH']
+env['ENV'].update(x for x in os.environ.items() if x[0].startswith('CCC_'))
 
 env.Append(
   CPPFLAGS = [ '-std=c++11', '-Wall', '-Wextra', '-Werror', '-pedantic-errors' ],
